@@ -54,7 +54,7 @@ to_test_case_stem()
 
 to_test_case_name()
 {
-    ${PRINTF} "test_%s_%s.rb\n" "${test_suite}" "`to_test_case_stem`";
+    ${PRINTF} "test_%s.rb\n" "`to_test_case_stem`";
 }
 
 # generate a test for test case name
