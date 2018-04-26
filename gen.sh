@@ -6,6 +6,8 @@ PERL=${PERL:-"/usr/bin/perl"}
 TR=${TR:-"/usr/bin/tr"}
 SED=${SED:-"/bin/sed"}
 ECHO=${ECHO:-"/bin/echo"}
+MKDIR=${MKDIR:-"/bin/mkdir"}
+MKDIR_P=${MKDIR_P:-"${MKDIR} -p"}
 GEN_TEST_CASE=${GEN_TEST_CASE:-"./scripts/gen-test-case.sh"}
 GEN_TEST_SUITE=${GEN_TEST_SUITE:-"./scripts/gen-test-suite.sh"}
 
