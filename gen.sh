@@ -68,7 +68,13 @@ mktestcase()
 # generate a suite incorporating all test cases found in suite directory
 mktestsuite()
 {
-    local fname="tests/suites/${test_suite}.rb"
+    local dname="tests/suites/${test_suite}"
+    local fname="${dname}.rb"
+
+    # make suite_dir
+    if [ ! -d ${dname} ]; then
+        ${MKDIR_P} ${dname} || die "Cannot mkdir ${dname}";
+    fi
 
     # generate a test for each test case name
     while [ "$#" -gt 0 ]; do
